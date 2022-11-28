@@ -2,7 +2,7 @@
 ## Blog
 
 
-## SpringMVC
+## Spring Boot
 ```shell
 Validation
 i18n
