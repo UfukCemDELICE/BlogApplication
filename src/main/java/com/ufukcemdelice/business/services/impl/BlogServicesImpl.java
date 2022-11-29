@@ -86,8 +86,8 @@ public class BlogServicesImpl implements IBlogServices {
     public BlogDto updateBlog(Long id, BlogDto blogDto) {
         BlogEntity registerEntity = repository.findById(id).orElseThrow(() -> new ResourceNotFoundException(id + " id bulunamadı"));
         if (registerEntity != null) {
-            //registerEntity.setBlogHeader(blogDto.getBlogHeader());
-            //registerEntity.setBlogContent(blogDto.getBlogContent());
+            registerEntity.setBlogHeader(blogDto.getBlogHeader());
+            registerEntity.setBlogContent(blogDto.getBlogContent());
             registerEntity.setEmail(blogDto.getEmail());
             registerEntity.setPassword(blogDto.getPassword());
             repository.save(registerEntity);

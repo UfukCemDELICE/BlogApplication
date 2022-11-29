@@ -18,7 +18,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v2")
 @CrossOrigin
 public class BlogApiImpl implements IBlogApi {
 
